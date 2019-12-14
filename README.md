@@ -1,5 +1,6 @@
 # my site
 
+* Run -> `gatsby develop`
 * make with gatsby
 * use material-ui
 * inspire from baha theme

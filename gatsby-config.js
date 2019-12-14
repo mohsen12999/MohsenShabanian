@@ -12,6 +12,7 @@ module.exports = {
       options: {
         name: `posts`,
         path: `${__dirname}/content/`,
+        ignore: [`**/\.*`], // ignore files starting with a dot
       },
     },
     `gatsby-transformer-remark`,
