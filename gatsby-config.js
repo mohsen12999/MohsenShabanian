@@ -16,5 +16,10 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-plugin-material-ui`,
+      options: {
+      },
+    },
   ]
 }
