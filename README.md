@@ -7,6 +7,6 @@
 
 ## Todo
 
-- [ ] test blog
-  - [ ] test blog list
-  - [ ] test blog single -> https://www.gatsbyjs.org/docs/adding-markdown-pages/
+- [x] blog list
+- [x] single blog
+- [ ] material ui https://appendto.com/2019/04/build-fast-and-elegant-sites-with-gatsby-netlifycms-and-material-ui/
