@@ -19,6 +19,10 @@
 - [ ] component
   - [ ] seo
   - [ ] layout
+    - [ ] add bg slider
+    - [ ] add change text
+    - [ ] make link
+    - [ ] add tooltips for icon
 
 ## mateial ui
 
