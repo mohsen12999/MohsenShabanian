@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import { makeStyles } from "@material-ui/core/styles"
 import { Typography } from "@material-ui/core"
+import ChangeText from "../components/changetext"
 
 const useStyles = makeStyles({
   banner: {
@@ -21,7 +22,7 @@ export default () => {
           Mohsen Shabanian
         </Typography>
         <Typography variant="h4" gutterBottom>
-          I'm a Web Developer
+          I'm a Web Developer - <ChangeText />
         </Typography>
       </div>
     </Layout>
