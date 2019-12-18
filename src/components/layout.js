@@ -127,7 +127,7 @@ const Layout = (props) => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            Responsive drawer
+            Mohsen Shabanian
           </Typography>
         </Toolbar>
       </AppBar>
