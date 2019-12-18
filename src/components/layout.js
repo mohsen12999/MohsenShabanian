@@ -1,29 +1,3 @@
-// import React from "react"
-// import Button from '@material-ui/core/Button';
-// import AppBar from '@material-ui/core/AppBar';
-// import Tabs from '@material-ui/core/Tabs';
-// import Tab from '@material-ui/core/Tab';
-
-// const Layout = ({children}) =>(
-//     <>
-//     <AppBar position="static">
-//         <Tabs >
-//           <Tab label="Item One"  />
-//           <Tab label="Item Two"  />
-//           <Tab label="Item Three"  />
-//         </Tabs>
-//       </AppBar>
-//     <main>
-//         {children}
-//     </main>
-//     <Button variant="contained" color="primary">
-//       Hello World
-//     </Button>
-//     </>
-// )
-
-// export default Layout
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
@@ -47,8 +21,13 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
+import GetAppIcon from '@material-ui/icons/GetApp';
 
-const drawerWidth = 200;
+const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -127,8 +106,36 @@ const Layout = (props) => {
           <ListItemText primary={"contact"} />
         </ListItem>
       </List>
+
       <Divider />
-      
+
+      <List>
+        <ListItem button>
+          <ListItemIcon> <TwitterIcon fontSize="large"/> </ListItemIcon>
+          <ListItemText primary={"@mohsen1299"} />
+        </ListItem>
+        <ListItem button>
+          <ListItemIcon> <AssignmentIndIcon fontSize="large"/> </ListItemIcon>
+          <ListItemText primary={"@mohsen-shabanian"} />
+        </ListItem>
+        <ListItem button>
+          <ListItemIcon> <InstagramIcon fontSize="large"/> </ListItemIcon>
+          <ListItemText primary={"@mohsen_1299"} />
+        </ListItem>
+        <ListItem button>
+          <ListItemIcon> <FacebookIcon fontSize="large"/> </ListItemIcon>
+          <ListItemText primary={"@mohsenshabanian"} />
+        </ListItem>
+      </List>
+
+      <Divider />
+
+      <List>
+        <ListItem button>
+          <ListItemIcon> <GetAppIcon fontSize="large"/> </ListItemIcon>
+          <ListItemText primary={"resume"} />
+        </ListItem>
+      </List>
     </div>
   );
 
