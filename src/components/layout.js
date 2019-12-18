@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import AppBar from "@material-ui/core/AppBar"
 import CssBaseline from "@material-ui/core/CssBaseline"
 import Divider from "@material-ui/core/Divider"
@@ -25,6 +26,7 @@ import InstagramIcon from "@material-ui/icons/Instagram"
 import FacebookIcon from "@material-ui/icons/Facebook"
 import AssignmentIndIcon from "@material-ui/icons/AssignmentInd"
 import GetAppIcon from "@material-ui/icons/GetApp"
+import Tooltip from "@material-ui/core/Tooltip"
 
 const drawerWidth = 240
 
@@ -58,12 +60,16 @@ const useStyles = makeStyles(theme => ({
   content: {
     flexGrow: 1,
     padding: theme.spacing(3),
-    backgroundImage:'url("/images/bg/desk-computer (6).jpg")',
-    height:"100vh",
-    backgroundSize:"cover"
+    backgroundImage: 'url("/images/bg/desk-computer (6).jpg")',
+    height: "100vh",
+    backgroundSize: "cover",
   },
   avatar: {
     marginRight: theme.spacing(1),
+  },
+  links: {
+    textDecoration: "None",
+    color: "inherit",
   },
 }))
 
@@ -83,82 +89,126 @@ const Layout = ({ container, children }) => {
       <div className={classes.toolbar} />
       <Divider />
       <List>
-        <ListItem button>
-          <ListItemIcon>
-            <HomeIcon fontSize="large" />
-          </ListItemIcon>
-          <ListItemText primary={"Home"} />
-        </ListItem>
-        <ListItem button>
-          <ListItemIcon>
-            <AccountCircleIcon fontSize="large" />
-          </ListItemIcon>
-          <ListItemText primary={"About"} />
-        </ListItem>
-        <ListItem button>
-          <ListItemIcon>
-            <ArtTrackIcon fontSize="large" />
-          </ListItemIcon>
-          <ListItemText primary={"Resume"} />
-        </ListItem>
-        <ListItem button>
-          <ListItemIcon>
-            <BurstModeIcon fontSize="large" />
-          </ListItemIcon>
-          <ListItemText primary={"Portofolio"} />
-        </ListItem>
-        <ListItem button>
-          <ListItemIcon>
-            <LibraryBooksIcon fontSize="large" />
-          </ListItemIcon>
-          <ListItemText primary={"Blogs"} />
-        </ListItem>
-        <ListItem button>
-          <ListItemIcon>
-            <ContactMailIcon fontSize="large" />
-          </ListItemIcon>
-          <ListItemText primary={"Contact"} />
-        </ListItem>
+        <Link className={classes.links} to="/">
+          <Tooltip title="Home Page" aria-label="home" arrow>
+            <ListItem button>
+              <ListItemIcon>
+                <HomeIcon fontSize="large" />
+              </ListItemIcon>
+              <ListItemText primary={"Home"} />
+            </ListItem>
+          </Tooltip>
+        </Link>
+        <Link className={classes.links} to="/about">
+          <Tooltip title="About Page" aria-label="about" arrow>
+            <ListItem button>
+              <ListItemIcon>
+                <AccountCircleIcon fontSize="large" />
+              </ListItemIcon>
+              <ListItemText primary={"About"} />
+            </ListItem>
+          </Tooltip>
+        </Link>
+        <Link className={classes.links} to="/resume">
+          <Tooltip title="Resume Page" aria-label="resume" arrow>
+            <ListItem button>
+              <ListItemIcon>
+                <ArtTrackIcon fontSize="large" />
+              </ListItemIcon>
+              <ListItemText primary={"Resume"} />
+            </ListItem>
+          </Tooltip>
+        </Link>
+        <Link className={classes.links} to="/portofolio">
+          <Tooltip title="Portofolio Page" aria-label="portofolio" arrow>
+            <ListItem button>
+              <ListItemIcon>
+                <BurstModeIcon fontSize="large" />
+              </ListItemIcon>
+              <ListItemText primary={"Portofolio"} />
+            </ListItem>
+          </Tooltip>
+        </Link>
+        <Link className={classes.links} to="/blogs">
+          <Tooltip title="Blogs List Page" aria-label="blogs" arrow>
+            <ListItem button>
+              <ListItemIcon>
+                <LibraryBooksIcon fontSize="large" />
+              </ListItemIcon>
+              <ListItemText primary={"Blogs"} />
+            </ListItem>
+          </Tooltip>
+        </Link>
+        <Link className={classes.links} to="/contact">
+          <Tooltip title="Contact Page" aria-label="contact" arrow>
+            <ListItem button>
+              <ListItemIcon>
+                <ContactMailIcon fontSize="large" />
+              </ListItemIcon>
+              <ListItemText primary={"Contact"} />
+            </ListItem>
+          </Tooltip>
+        </Link>
       </List>
 
       <Divider />
 
       <List>
-        <ListItem button>
-          <ListItemIcon>
-            <TwitterIcon fontSize="large" />
-          </ListItemIcon>
-          <ListItemText primary={"@mohsen1299"} />
-        </ListItem>
-        <ListItem button>
-          <ListItemIcon>
-            <AssignmentIndIcon fontSize="large" />
-          </ListItemIcon>
-          <ListItemText primary={"@mohsen-shabanian"} />
-        </ListItem>
-        <ListItem button>
-          <ListItemIcon>
-            <InstagramIcon fontSize="large" />
-          </ListItemIcon>
-          <ListItemText primary={"@mohsen_1299"} />
-        </ListItem>
-        <ListItem button>
-          <ListItemIcon>
-            <FacebookIcon fontSize="large" />
-          </ListItemIcon>
-          <ListItemText primary={"@mohsenshabanian"} />
-        </ListItem>
+        <a className={classes.links} href="https://twitter.com/mohsen1299">
+          <Tooltip title="Twitter Home Page" aria-label="twitter" arrow>
+            <ListItem button>
+              <ListItemIcon>
+                <TwitterIcon fontSize="large" />
+              </ListItemIcon>
+              <ListItemText primary={"@mohsen1299"} />
+            </ListItem>
+          </Tooltip>
+        </a>
+        <a className={classes.links} href="https://www.linkedin.com/in/mohsen-shabanian-8869b478/">
+          <Tooltip title="Linkdin Home Page" aria-label="linkdin" arrow>
+            <ListItem button>
+              <ListItemIcon>
+                <AssignmentIndIcon fontSize="large" />
+              </ListItemIcon>
+              <ListItemText primary={"@mohsen-shabanian"} />
+            </ListItem>
+          </Tooltip>
+        </a>
+        <a className={classes.links} href="https://www.instagram.com/mohsen_1299/">
+          <Tooltip title="Instagram Home Page" aria-label="instagram" arrow>
+            <ListItem button>
+              <ListItemIcon>
+                <InstagramIcon fontSize="large" />
+              </ListItemIcon>
+              <ListItemText primary={"@mohsen_1299"} />
+            </ListItem>
+          </Tooltip>
+        </a>
+        <a className={classes.links} href="https://www.facebook.com/MohsenShabanian">
+          <Tooltip title="Facebook Home Page" aria-label="facebook" arrow>
+            <ListItem button>
+              <ListItemIcon>
+                <FacebookIcon fontSize="large" />
+              </ListItemIcon>
+              <ListItemText primary={"@mohsenshabanian"} />
+            </ListItem>
+          </Tooltip>
+        </a>
       </List>
 
       <Divider />
 
       <List>
-        <ListItem button>
-          <ListItemIcon>
-            <GetAppIcon fontSize="large" />
-          </ListItemIcon>
-          <ListItemText primary={"resume"} />
-        </ListItem>
+        <a className={classes.links} href="/file/MohsenShabanian.pdf" download>
+          <Tooltip title="Download Resume File" aria-label="resume" arrow>
+            <ListItem button>
+              <ListItemIcon>
+                <GetAppIcon fontSize="large" />
+              </ListItemIcon>
+              <ListItemText primary={"resume"} />
+            </ListItem>
+          </Tooltip>
+        </a>
       </List>
     </div>
   )
