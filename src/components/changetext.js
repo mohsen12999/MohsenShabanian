@@ -2,30 +2,35 @@ import React, { useEffect, useState } from "react"
 import "./changetext.css"
 
 export default ({ words, colors, time, step, wait }) => {
-  const tempText = ["Hello World.", "Console Text", "Made with Love.","ali"]
+  const tempText = ["Hello World.", "Console Text", "Made with Love.", "ali"]
   words = words !== undefined && words.length > 0 ? words : tempText
-  colors = colors !== undefined && colors.length > 0 ? colors : ["#fff","#000","#f00","#0f0"]
+  colors =
+    colors !== undefined && colors.length > 0
+      ? colors
+      : ["#fff", "#000", "#f00", "#0f0"]
   time = time !== undefined ? time : 120
   step = step !== undefined ? step : 1
-  wait = wait !== undefined ? wait : 3
+  wait = wait !== undefined ? wait : 4
 
-  const [waiting, setWaiting] = useState(0)
+  const [waiting, setWaiting] = useState(wait)
 
   const [letter, setLetter] = useState("")
-  const [letterCount, setLetterCount] = useState(1)
+  const [letterCount, setLetterCount] = useState(0)
 
-  const [word, setWord] = useState(words[0])
+  const [word, setWord] = useState("")
   const [wordCounter, setWordCounter] = useState(0)
 
-  const [color, setColor] = useState(colors[0])
+  const [color, setColor] = useState("")
   const [colorCounter, setColorCounter] = useState(0)
 
   const [typing, setTyping] = useState(true)
 
   const makeText = () => {
     if (waiting > 0) {
+      // waiting...
       setWaiting(waiting - 1)
     } else if (letterCount === 0) {
+      // change word
       // add waiting
       setWaiting(wait)
       // change color
@@ -45,14 +50,12 @@ export default ({ words, colors, time, step, wait }) => {
       setLetterCount(step)
       setTyping(true)
       setLetter(word.substring(0, letterCount))
-
-    } else if (letterCount === words.length + 1) {
-      // add waiting
+    } else if (letterCount === word.length + 1 && typing !== false) {
+      // end of letter...
       setWaiting(wait)
-      //setLetterCount(0)
       setTyping(false)
-
     } else {
+      // write letter...
       setLetter(word.substring(0, letterCount))
       if (typing) {
         setLetterCount(letterCount + 1)
