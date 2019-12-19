@@ -1,0 +1,40 @@
+.main_title {
+  text-align: center;
+}
+
+.main_title span {
+  border-bottom: 2px solid black;
+}
+
+.my-flex-card {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 1em;
+  background-color: #ffffffb0 !important;
+}
+
+.my-flex-card .img {
+  width: 200px;
+  height: 200px;
+}
+
+.my-flex-card .img img {
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+.my-flex-card .desc {
+  flex: 1;
+  min-width: 250px;
+  padding: 1em;
+  text-align: justify;
+}
+
+.from-city {
+  color: darkslategrey;
+  font-weight: 600;
+}
