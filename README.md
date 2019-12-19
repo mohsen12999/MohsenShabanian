@@ -20,9 +20,11 @@
   - [ ] seo
   - [ ] layout
     - [ ] add bg slider
-    - [ ] add change text
-    - [ ] make link
-    - [ ] add tooltips for icon
+    - [x] add change text
+    - [x] make link
+    - [x] add tooltips for icon
+    - [ ] show active icon
+- [ ] add font awesome -> [react-fontawesome](https://github.com/FortAwesome/react-fontawesome)
 
 ## mateial ui
 

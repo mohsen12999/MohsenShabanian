@@ -24,9 +24,10 @@ import Avatar from "@material-ui/core/Avatar"
 import TwitterIcon from "@material-ui/icons/Twitter"
 import InstagramIcon from "@material-ui/icons/Instagram"
 import FacebookIcon from "@material-ui/icons/Facebook"
-import AssignmentIndIcon from "@material-ui/icons/AssignmentInd"
 import GetAppIcon from "@material-ui/icons/GetApp"
 import Tooltip from "@material-ui/core/Tooltip"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const drawerWidth = 240
 
@@ -168,7 +169,7 @@ const Layout = ({ container, children }) => {
           <Tooltip title="Linkdin Home Page" aria-label="linkdin" arrow>
             <ListItem button>
               <ListItemIcon>
-                <AssignmentIndIcon fontSize="large" />
+                <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: 30 }} />
               </ListItemIcon>
               <ListItemText primary={"@mohsen-shabanian"} />
             </ListItem>
