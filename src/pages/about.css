@@ -1,4 +1,5 @@
 .main_title {
+  margin-top: 1em !important;
   text-align: center;
 }
 
@@ -6,7 +7,12 @@
   border-bottom: 2px solid black;
 }
 
-.my-flex-card {
+.paper-card {
+  background-color: #ffffffb0 !important;
+}
+
+.my-flex-card,
+.ability-card {
   position: relative;
   display: flex;
   align-items: flex-start;
@@ -14,7 +20,6 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 1em;
-  background-color: #ffffffb0 !important;
 }
 
 .my-flex-card .img {
@@ -37,4 +42,24 @@
 .from-city {
   color: darkslategrey;
   font-weight: 600;
+}
+
+.ability-item {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1em;
+}
+
+.ability-item span {
+  margin-left: 3px;
+  flex: 1 1 auto;
+}
+
+.ability-item span h3,
+.ability-item span p {
+  margin-block-start: 0;
+  margin-block-end: 0;
 }

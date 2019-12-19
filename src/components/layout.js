@@ -26,8 +26,8 @@ import InstagramIcon from "@material-ui/icons/Instagram"
 import FacebookIcon from "@material-ui/icons/Facebook"
 import GetAppIcon from "@material-ui/icons/GetApp"
 import Tooltip from "@material-ui/core/Tooltip"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
 const drawerWidth = 240
 
@@ -62,7 +62,9 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
     padding: theme.spacing(3),
     backgroundImage: 'url("/images/bg/desk-computer (6).jpg")',
-    height: "100vh",
+    height: "100%",
+    minHeight: "100vh",
+    backgroundPosition: "center center",
     backgroundSize: "cover",
   },
   avatar: {
@@ -165,7 +167,10 @@ const Layout = ({ container, children }) => {
             </ListItem>
           </Tooltip>
         </a>
-        <a className={classes.links} href="https://www.linkedin.com/in/mohsen-shabanian-8869b478/">
+        <a
+          className={classes.links}
+          href="https://www.linkedin.com/in/mohsen-shabanian-8869b478/"
+        >
           <Tooltip title="Linkdin Home Page" aria-label="linkdin" arrow>
             <ListItem button>
               <ListItemIcon>
@@ -175,7 +180,10 @@ const Layout = ({ container, children }) => {
             </ListItem>
           </Tooltip>
         </a>
-        <a className={classes.links} href="https://www.instagram.com/mohsen_1299/">
+        <a
+          className={classes.links}
+          href="https://www.instagram.com/mohsen_1299/"
+        >
           <Tooltip title="Instagram Home Page" aria-label="instagram" arrow>
             <ListItem button>
               <ListItemIcon>
@@ -185,7 +193,10 @@ const Layout = ({ container, children }) => {
             </ListItem>
           </Tooltip>
         </a>
-        <a className={classes.links} href="https://www.facebook.com/MohsenShabanian">
+        <a
+          className={classes.links}
+          href="https://www.facebook.com/MohsenShabanian"
+        >
           <Tooltip title="Facebook Home Page" aria-label="facebook" arrow>
             <ListItem button>
               <ListItemIcon>
