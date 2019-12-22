@@ -2,12 +2,14 @@ import React from "react"
 import Layout from "../components/layout"
 import Paper from "@material-ui/core/Paper"
 import Typography from "@material-ui/core/Typography"
+import Grid from "@material-ui/core/Grid"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faMap } from "@fortawesome/free-solid-svg-icons"
 import LanguageIcon from "@material-ui/icons/Language"
 import OfflineBoltIcon from "@material-ui/icons/OfflineBolt"
 import SportsEsportsIcon from "@material-ui/icons/SportsEsports"
 import SupervisorAccountIcon from "@material-ui/icons/SupervisorAccount"
+import { faMap, faGlobe, faHeadset } from "@fortawesome/free-solid-svg-icons"
+import { faWindows, faAndroid } from "@fortawesome/free-brands-svg-icons"
 
 import "./about.css"
 
@@ -90,83 +92,110 @@ export default () => {
       >
         <span>My Services</span>
       </Typography>
-      <div className="my-servises">
-        <div className="service-item">
-          <Typography
-            className="service-title"
-            variant="h5"
-            component="h5"
-            gutterBottom
-          >
-            <span>Making Website</span>
-          </Typography>
-          <Typography
-            className="service-desc"
-            variant="p"
-            component="p"
-            gutterBottom
-          >
-            <span> -- </span>
-          </Typography>
-        </div>
 
-        <div className="service-item">
-          <Typography
-            className="service-title"
-            variant="h5"
-            component="h5"
-            gutterBottom
-          >
-            <span>Making Web-App</span>
-          </Typography>
-          <Typography
-            className="service-desc"
-            variant="p"
-            component="p"
-            gutterBottom
-          >
-            <span> -- </span>
-          </Typography>
-        </div>
+      <Grid container spacing={1}>
+        <Grid container item xs={12} spacing={3}>
+          <Grid item md={6} xs={12}>
+            <Paper className="service-item">
+              <div className="service-icon-span">
+                <FontAwesomeIcon icon={faGlobe} className="service-icon" />
+              </div>
+              <Typography
+                className="service-title"
+                variant="h6"
+                component="h6"
+                gutterBottom
+              >
+                <span>Make Website</span>
+              </Typography>
+              <Typography
+                className="service-desc"
+                variant="p"
+                component="p"
+                gutterBottom
+              >
+                Making e-commerce, company, or blog with your custome design,
+                sontent and administrator system. change and add tools and
+                utility that you need. Using .Net (c# lang.) or Laravel (php
+                lang.) or Another frameworks.
+              </Typography>
+            </Paper>
+          </Grid>
+          <Grid item md={6} xs={12}>
+            <Paper className="service-item">
+              <div className="service-icon-span">
+                <FontAwesomeIcon icon={faWindows} className="service-icon" />
+              </div>
+              <Typography
+                className="service-title"
+                variant="h6"
+                component="h6"
+                gutterBottom
+              >
+                <span>Develop Web-App</span>
+              </Typography>
+              <Typography
+                className="service-desc"
+                variant="p"
+                component="p"
+                gutterBottom
+              >
+                <span> -- </span>
+              </Typography>
+            </Paper>
+          </Grid>
+        </Grid>
+        <Grid container item xs={12} spacing={3}>
+          <Grid item md={6} xs={12}>
+            <Paper className="service-item">
+              <div className="service-icon-span">
+                <FontAwesomeIcon icon={faAndroid} className="service-icon" />
+              </div>
+              <FontAwesomeIcon />
+              <Typography
+                className="service-title"
+                variant="h6"
+                component="h6"
+                gutterBottom
+              >
+                <span>Native App</span>
+              </Typography>
+              <Typography
+                className="service-desc"
+                variant="p"
+                component="p"
+                gutterBottom
+              >
+                <span> -- </span>
+              </Typography>
+            </Paper>
+          </Grid>
+          <Grid item md={6} xs={12}>
+            <Paper className="service-item">
+              <div className="service-icon-span">
+                <FontAwesomeIcon icon={faHeadset} className="service-icon" />
+              </div>
+              <Typography
+                className="service-title"
+                variant="h6"
+                component="h6"
+                gutterBottom
+              >
+                <span>Support Apps</span>
+              </Typography>
+              <Typography
+                className="service-desc"
+                variant="p"
+                component="p"
+                gutterBottom
+              >
+                <span> -- </span>
+              </Typography>
+            </Paper>
+          </Grid>
+        </Grid>
+      </Grid>
 
-        <div className="service-item">
-          <Typography
-            className="service-title"
-            variant="h5"
-            component="h5"
-            gutterBottom
-          >
-            <span>Making Native App</span>
-          </Typography>
-          <Typography
-            className="service-desc"
-            variant="p"
-            component="p"
-            gutterBottom
-          >
-            <span> -- </span>
-          </Typography>
-        </div>
-
-        <div className="service-item">
-          <Typography
-            className="service-title"
-            variant="h5"
-            component="h5"
-            gutterBottom
-          >
-            <span>Supports App</span>
-          </Typography>
-          <Typography
-            className="service-desc"
-            variant="p"
-            component="p"
-            gutterBottom
-          >
-            <span> -- </span>
-          </Typography>
-        </div>
-      </div>
       <Typography
         className="main_title"
         variant="h4"

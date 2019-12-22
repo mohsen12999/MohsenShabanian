@@ -15,7 +15,7 @@
 .ability-card {
   position: relative;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -62,4 +62,24 @@
 .ability-item span p {
   margin-block-start: 0;
   margin-block-end: 0;
+}
+
+.service-item {
+  padding: 1em;
+  background-color: #ffffffbb !important;
+}
+
+.service-item .service-title {
+  text-align: center;
+}
+
+.service-item .service-icon-span {
+  text-align: center;
+}
+
+.service-item .service-icon {
+  font-size: 30px;
+}
+.service-item .service-desc {
+  text-align: justify;
 }
