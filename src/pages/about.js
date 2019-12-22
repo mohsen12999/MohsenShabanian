@@ -8,8 +8,9 @@ import LanguageIcon from "@material-ui/icons/Language"
 import OfflineBoltIcon from "@material-ui/icons/OfflineBolt"
 import SportsEsportsIcon from "@material-ui/icons/SportsEsports"
 import SupervisorAccountIcon from "@material-ui/icons/SupervisorAccount"
-import { faMap, faGlobe, faHeadset } from "@fortawesome/free-solid-svg-icons"
+import { faMap, faGlobe, faHeadset, faGamepad } from "@fortawesome/free-solid-svg-icons"
 import { faWindows, faAndroid } from "@fortawesome/free-brands-svg-icons"
+import Chip from "@material-ui/core/Chip"
 
 import "./about.css"
 
@@ -140,7 +141,10 @@ export default () => {
                 component="p"
                 gutterBottom
               >
-                <span> -- </span>
+                Develop Web base application such as office automation or
+                accounting or web-base app for android. Using Sql (like
+                sql-serve or mysql)r or NoSql Database (like mongodb or
+                postgre).
               </Typography>
             </Paper>
           </Grid>
@@ -166,7 +170,8 @@ export default () => {
                 component="p"
                 gutterBottom
               >
-                <span> -- </span>
+                Making Windows application with visual studio and c#. Make
+                Android application with Android studio and java.
               </Typography>
             </Paper>
           </Grid>
@@ -189,7 +194,8 @@ export default () => {
                 component="p"
                 gutterBottom
               >
-                <span> -- </span>
+                Support and consoltant about applications whenever yopu need and
+                as soon as possible.
               </Typography>
             </Paper>
           </Grid>
@@ -205,7 +211,14 @@ export default () => {
         <span>My Interests</span>
       </Typography>
       <Paper className="paper-card">
-        video Game, Movie, Music, Reading Book, Photo, Walking
+      <Chip label="video Game" icon={<FontAwesomeIcon icon={faGamepad} />} />
+        <Chip label="Movie" icon={<FontAwesomeIcon icon={faGamepad} />} />
+        <Chip label="Music" icon={<FontAwesomeIcon icon={faGamepad} />} />
+        <Chip label="Reading Book" icon={<FontAwesomeIcon icon={faGamepad} />} />
+        <Chip label="Photo" icon={<FontAwesomeIcon icon={faGamepad} />} />
+        <Chip label="Walking" icon={<FontAwesomeIcon icon={faGamepad} />} />
+        <Chip label="ُTravel" icon={<FontAwesomeIcon icon={faGamepad} />} />
+        <Chip label="car" icon={<FontAwesomeIcon icon={faGamepad} />} />
       </Paper>
     </Layout>
   )
