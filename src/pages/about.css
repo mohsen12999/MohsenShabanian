@@ -83,3 +83,10 @@
 .service-item .service-desc {
   text-align: justify;
 }
+.my-interest-card {
+  background-color: #ffffff60 !important;
+  padding: 10px !important;
+}
+.my-interest-item {
+  padding: 3px 7px !important;
+}

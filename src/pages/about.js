@@ -8,7 +8,18 @@ import LanguageIcon from "@material-ui/icons/Language"
 import OfflineBoltIcon from "@material-ui/icons/OfflineBolt"
 import SportsEsportsIcon from "@material-ui/icons/SportsEsports"
 import SupervisorAccountIcon from "@material-ui/icons/SupervisorAccount"
-import { faMap, faGlobe, faHeadset, faGamepad } from "@fortawesome/free-solid-svg-icons"
+import {
+  faMap,
+  faGlobe,
+  faHeadset,
+  faGamepad,
+  faFilm,
+  faMusic,
+  faCamera,
+  faWalking,
+  faSuitcase,
+  faTruckPickup,
+} from "@fortawesome/free-solid-svg-icons"
 import { faWindows, faAndroid } from "@fortawesome/free-brands-svg-icons"
 import Chip from "@material-ui/core/Chip"
 
@@ -210,15 +221,41 @@ export default () => {
       >
         <span>My Interests</span>
       </Typography>
-      <Paper className="paper-card">
-      <Chip label="video Game" icon={<FontAwesomeIcon icon={faGamepad} />} />
-        <Chip label="Movie" icon={<FontAwesomeIcon icon={faGamepad} />} />
-        <Chip label="Music" icon={<FontAwesomeIcon icon={faGamepad} />} />
-        <Chip label="Reading Book" icon={<FontAwesomeIcon icon={faGamepad} />} />
-        <Chip label="Photo" icon={<FontAwesomeIcon icon={faGamepad} />} />
-        <Chip label="Walking" icon={<FontAwesomeIcon icon={faGamepad} />} />
-        <Chip label="ُTravel" icon={<FontAwesomeIcon icon={faGamepad} />} />
-        <Chip label="car" icon={<FontAwesomeIcon icon={faGamepad} />} />
+      <Paper className="my-interest-card">
+        <Grid
+          container
+          direction="row"
+          justify="space-around"
+          alignItems="center"
+        >
+          <Grid item className="my-interest-item">
+            <Chip
+              label="video Game"
+              icon={<FontAwesomeIcon icon={faGamepad} />}
+            />
+          </Grid>
+          <Grid item className="my-interest-item">
+            <Chip label="Movie" icon={<FontAwesomeIcon icon={faFilm} />} />
+          </Grid>
+          <Grid item className="my-interest-item">
+            <Chip label="Music" icon={<FontAwesomeIcon icon={faMusic} />} />
+          </Grid>
+          <Grid item className="my-interest-item">
+            <Chip label="Photo" icon={<FontAwesomeIcon icon={faCamera} />} />
+          </Grid>
+          <Grid item className="my-interest-item">
+            <Chip label="Walking" icon={<FontAwesomeIcon icon={faWalking} />} />
+          </Grid>
+          <Grid item className="my-interest-item">
+            <Chip label="Travel" icon={<FontAwesomeIcon icon={faSuitcase} />} />
+          </Grid>
+          <Grid item className="my-interest-item">
+            <Chip
+              label="Cars"
+              icon={<FontAwesomeIcon icon={faTruckPickup} />}
+            />
+          </Grid>
+        </Grid>
       </Paper>
     </Layout>
   )
