@@ -9,6 +9,11 @@
 
 .paper-card {
   background-color: #ffffffb0 !important;
+  transition: background-color 1s ease-out;
+}
+.paper-card:hover {
+  background-color: #fffffff0 !important;
+  transition: background-color 1s ease-out;
 }
 
 .my-flex-card,
@@ -67,6 +72,12 @@
 .service-item {
   padding: 1em;
   background-color: #ffffffbb !important;
+  transition: background-color 500ms ease-out;
+}
+
+.service-item:hover {
+  background-color: #fffffff0 !important;
+  transition: background-color 500ms ease-out;
 }
 
 .service-item .service-title {
