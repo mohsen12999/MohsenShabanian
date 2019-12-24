@@ -3,7 +3,8 @@
 - Run -> `gatsby develop`
 - make with gatsby
 - use material-ui
-- inspire from baha theme -> [link to theme](http://baha.malyarchuk.space/index-image.html)
+- inspire from [baha theme](http://baha.malyarchuk.space/index-image.html)
+- inspire from [rida theme](https://aazztech.com/demos/themes/html/rida/rida/index.html)
 
 ## Todo
 
