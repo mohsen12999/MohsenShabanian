@@ -1,0 +1,9 @@
+.experience_title,
+.education_title {
+  text-align: center;
+}
+
+.experience_title span,
+.education_title span {
+  border-bottom: 1px solid black;
+}
