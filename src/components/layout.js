@@ -24,6 +24,7 @@ import Avatar from "@material-ui/core/Avatar"
 import TwitterIcon from "@material-ui/icons/Twitter"
 import InstagramIcon from "@material-ui/icons/Instagram"
 import FacebookIcon from "@material-ui/icons/Facebook"
+import GitHubIcon from "@material-ui/icons/GitHub"
 import GetAppIcon from "@material-ui/icons/GetApp"
 import Tooltip from "@material-ui/core/Tooltip"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -193,7 +194,17 @@ const Layout = ({ container, children }) => {
             </ListItem>
           </Tooltip>
         </a>
-        <a
+        <a className={classes.links} href="https://www.github.com/mohsen12999">
+          <Tooltip title="Github Page" aria-label="github" arrow>
+            <ListItem button>
+              <ListItemIcon>
+                <GitHubIcon fontSize="large" />
+              </ListItemIcon>
+              <ListItemText primary={"@mohsenshabanian"} />
+            </ListItem>
+          </Tooltip>
+        </a>
+        {/* <a
           className={classes.links}
           href="https://www.facebook.com/MohsenShabanian"
         >
@@ -205,7 +216,7 @@ const Layout = ({ container, children }) => {
               <ListItemText primary={"@mohsenshabanian"} />
             </ListItem>
           </Tooltip>
-        </a>
+        </a> */}
       </List>
 
       <Divider />
