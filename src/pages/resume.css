@@ -1,9 +1,82 @@
 .experience_title,
 .education_title {
   text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.experience_title span,
+.education_title span {
+  margin-left: 6px;
 }
 
 .experience_title span,
 .education_title span {
   border-bottom: 1px solid black;
+}
+
+ul.timeline {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  /*padding-inline-start: 40px;*/
+  padding-inline-start: 0;
+  padding-top: 17px;
+  position: relative;
+}
+
+ul.timeline:before {
+  content: "";
+  position: absolute;
+  height: calc(100% - 43px);
+  width: 1px;
+  background: #d1d1d1;
+  bottom: 0;
+  left: 8px;
+}
+
+ul.timeline li {
+  list-style: none;
+  padding-left: 2em;
+  position: relative;
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+ul.timeline li:before {
+  content: "";
+  left: 0;
+  top: 21px;
+  border-radius: 50%;
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  background: #fff;
+  border: 2px solid #000;
+  padding: 0;
+  margin: 0;
+}
+
+ul.timeline li + li {
+  margin-top: 2em;
+}
+
+ul.timeline .time {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+ul.timeline .time span {
+  margin-left: 4px;
+}
+
+ul.timeline .timeline-paper {
+  padding: 1em;
+}
+
+.study-field {
+  font-weight: bold !important;
 }
