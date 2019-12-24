@@ -126,10 +126,10 @@ export default () => {
                 component="p"
                 gutterBottom
               >
-                Making e-commerce, company, or blog with your custome design,
-                sontent and administrator system. change and add tools and
-                utility that you need. Using .Net (c# lang.) or Laravel (php
-                lang.) or Another frameworks.
+                Making e-commerce, company website, or blog with your custom
+                design, content, and administrator system. change and add tools
+                and utility that you need. Using .Net (c# lang.) or Laravel (Php
+                lang.) or Other frameworks.
               </Typography>
             </Paper>
           </Grid>
@@ -152,10 +152,11 @@ export default () => {
                 component="p"
                 gutterBottom
               >
-                Develop Web base application such as office automation or
-                accounting or web-base app for android. Using Sql (like
-                sql-serve or mysql)r or NoSql Database (like mongodb or
-                postgre).
+                Develop Web-based applications such as office automation,
+                accounting. Making web-based apps (such as React-Native) or PWA
+                (Progressive Web App) for android or ios. Using SQL (like
+                sql-server or MySQL)r or NoSql Database (like MongoDB or
+                Postgres).
               </Typography>
             </Paper>
           </Grid>
@@ -181,8 +182,8 @@ export default () => {
                 component="p"
                 gutterBottom
               >
-                Making Windows application with visual studio and c#. Make
-                Android application with Android studio and java.
+                Making Windows application with visual studio and c#. Make a
+                simple Android application with Android studio and java.
               </Typography>
             </Paper>
           </Grid>
@@ -205,8 +206,9 @@ export default () => {
                 component="p"
                 gutterBottom
               >
-                Support and consoltant about applications whenever yopu need and
-                as soon as possible.
+                Support and consultant about applications whenever you need them
+                and as soon as possible. Add new components or tools for your
+                application or website.
               </Typography>
             </Paper>
           </Grid>
