@@ -80,3 +80,7 @@ ul.timeline .timeline-paper {
 .study-field {
   font-weight: bold !important;
 }
+
+.skill-column {
+  padding: 1em !important;
+}

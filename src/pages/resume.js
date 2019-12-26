@@ -149,11 +149,85 @@ export default () => (
     </Typography>
     <Paper>
       <Grid container spacing={2}>
-        <Grid item xs={12} md={6}>
-          <LinearProgress variant="determinate" value={75} />
+        <Grid className="skill-column" item xs={12} md={6}>
+          <div className="skill-row">
+            <span className="skill-title">C#</span> -
+            <span className="skill-percent">70%</span>
+            <LinearProgress
+              variant="determinate"
+              value={70}
+              style={{ height: 10 }}
+            />
+          </div>
+          <div className="skill-row">
+            <span className="skill-title">Html Css</span> -
+            <span className="skill-percent">45%</span>
+            <LinearProgress variant="determinate" value={45} />
+          </div>
+
+          <div className="skill-row">
+            <span className="skill-title">Php</span> -
+            <span className="skill-percent">50%</span>
+            <LinearProgress variant="determinate" value={50} />
+          </div>
+          <div className="skill-row">
+            <span className="skill-title">Javascript</span> -
+            <span className="skill-percent">45%</span>
+            <LinearProgress variant="determinate" value={45} />
+          </div>
+          <div className="skill-row">
+            <span className="skill-title">Sql</span> -
+            <span className="skill-percent">40%</span>
+            <LinearProgress variant="determinate" value={40} />
+          </div>
+          <div className="skill-row">
+            <span className="skill-title">Python</span> -
+            <span className="skill-percent">40%</span>
+            <LinearProgress variant="determinate" value={40} />
+          </div>
+          <div className="skill-row">
+            <span className="skill-title">C/C++</span> -
+            <span className="skill-percent">40%</span>
+            <LinearProgress variant="determinate" value={40} />
+          </div>
         </Grid>
-        <Grid item xs={12} md={6}>
-          <CircularProgress variant="static" value={75} />
+
+        <Grid className="skill-column" item xs={12} md={6}>
+          <div className="skill-row-2">
+            <div className="skill-title">Visual studio</div>
+            <div className="skill-circle">
+              <div className="skill-title">75%</div>
+              <CircularProgress variant="static" value={75} />
+            </div>
+          </div>
+          <div className="skill-row-2">
+            <div className="skill-title">Sql server</div>
+            <div className="skill-circle">
+              <div className="skill-title">75%</div>
+              <CircularProgress variant="static" value={75} />
+            </div>
+          </div>
+          <div className="skill-row-2">
+            <div className="skill-title">Git</div>
+            <div className="skill-circle">
+              <div className="skill-title">75%</div>
+              <CircularProgress variant="static" value={75} />
+            </div>
+          </div>
+          <div className="skill-row-2">
+            <div className="skill-title">MySql</div>
+            <div className="skill-circle">
+              <div className="skill-title">75%</div>
+              <CircularProgress variant="static" value={75} />
+            </div>
+          </div>
+          <div className="skill-row-2">
+            <div className="skill-title">Vim</div>
+            <div className="skill-circle">
+              <div className="skill-title">75%</div>
+              <CircularProgress variant="static" value={75} />
+            </div>
+          </div>
         </Grid>
       </Grid>
     </Paper>
