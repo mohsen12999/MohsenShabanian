@@ -232,7 +232,7 @@ export default () => {
         >
           <Grid item className="my-interest-item">
             <Chip
-              label="video Game"
+              label="Video Game"
               icon={<FontAwesomeIcon icon={faGamepad} />}
             />
           </Grid>
