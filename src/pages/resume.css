@@ -82,5 +82,38 @@ ul.timeline .timeline-paper {
 }
 
 .skill-column {
-  padding: 1em !important;
+  padding: 2em !important;
+}
+
+.skill-row {
+  margin-bottom: 1em;
+}
+
+.skill-title,
+.skill-percent {
+  font-weight: bold !important;
+  font-size: 1.1em;
+}
+
+.skill-percent {
+  float: right;
+}
+
+.skill-line {
+  height: 10px !important;
+}
+
+.skill-row-2 .skill-title,
+.skill-row-2 .skill-circle {
+  display: inline-flex;
+}
+
+.skill-circle {
+  position: relative;
+}
+
+.skill-circle .skill-percent {
+  position: absolute;
+  left: 3px;
+  top: 7px;
 }
