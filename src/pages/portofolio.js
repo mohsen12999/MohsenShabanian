@@ -89,7 +89,7 @@ const myPortofolio = [
     type: "website",
     role: "develop",
     pic: "/images/portfolio/1.jpg",
-    link: "www.magiclight.ir",
+    link: "https://www.magiclight.ir",
   },
   {
     title: "mohsen shabanian",
@@ -177,7 +177,7 @@ export default () => {
       <Paper>
         <GridList>
           {myPortofolio.map(p => (
-            <GridListTile key={p.title}>
+            <GridListTile style={{ minHeight: 400 }} key={p.title}>
               <img src={p.pic} alt={p.title} />
               <GridListTileBar
                 title={p.title}
