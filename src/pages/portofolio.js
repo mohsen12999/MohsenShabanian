@@ -28,7 +28,7 @@ const myPortofolio = [
     tech: "Laravel (Php) framework and Mysql database",
     type: "website",
     role: "design, develop and support",
-    pic: "/images/portfolio/nasimramsar.jpg",
+    pic: "/images/portfolio/nasimramsar.png",
     link: "http://Nasimramsar.com/",
   },
   {
@@ -38,7 +38,7 @@ const myPortofolio = [
     tech: ".net core (C#) framework and sql server database",
     type: "website",
     role: "design and develop",
-    pic: "/images/portfolio/1.jpg",
+    pic: "/images/portfolio/qazvincoffee.png",
     link: "https://www.QazvinCoffee.com/",
   },
   {
@@ -48,7 +48,7 @@ const myPortofolio = [
     tech: "Laravel (Php) framework and Mysql database",
     type: "website",
     role: "design, develop and support",
-    pic: "/images/portfolio/ayegh.jpg",
+    pic: "/images/portfolio/ayegh.png",
     link: "https://www.ayeghsanatkhazar.com/",
   },
   {
@@ -58,7 +58,7 @@ const myPortofolio = [
     tech: ".net core (C#) framework and sql server database",
     type: "website",
     role: "design and develop",
-    pic: "/images/portfolio/villaayab.jpg",
+    pic: "/images/portfolio/villaayab.png",
     link: "https://www.Villaayab.com/",
   },
   {
@@ -68,7 +68,7 @@ const myPortofolio = [
     tech: "Laravel (Php) framework and Mysql database",
     type: "website",
     role: "design and develop",
-    pic: "/images/portfolio/1.jpg",
+    pic: "/images/portfolio/shiroudi.png",
     link: "https://www.omidshiroudi.ir/",
   },
   {
@@ -78,7 +78,7 @@ const myPortofolio = [
     tech: "Laravel (Php) framework and Mysql database",
     type: "website",
     role: "develop",
-    pic: "/images/portfolio/1.jpg",
+    pic: "/images/portfolio/apdr.png",
     link: "https://www.apdr.ir/",
   },
   {
@@ -88,7 +88,7 @@ const myPortofolio = [
     tech: "html5",
     type: "website",
     role: "develop",
-    pic: "/images/portfolio/1.jpg",
+    pic: "/images/portfolio/magiclight.png",
     link: "https://www.magiclight.ir",
   },
   {
@@ -97,7 +97,7 @@ const myPortofolio = [
     tech: "gatsbyjs",
     type: "website",
     role: "design and develop",
-    pic: "/images/portfolio/1.jpg",
+    pic: "/images/portfolio/mohsenshabanian.png",
     link: "https://mohsenshabanian.com",
   },
 
@@ -108,7 +108,7 @@ const myPortofolio = [
     tech: "reactjs",
     type: "webapp",
     role: "design and develop",
-    pic: "/images/portfolio/1.jpg",
+    pic: "/images/portfolio/noon.png",
     link: "https://noonap.ir",
   },
   {
@@ -118,7 +118,7 @@ const myPortofolio = [
     tech: "html5 and javascript",
     type: "game",
     role: "developer",
-    pic: "/images/portfolio/1.jpg",
+    pic: "/images/portfolio/dalangang.png",
     link: "https://magic-light-team.github.io/Dalan-e-Ganj/",
   },
   {
@@ -128,7 +128,7 @@ const myPortofolio = [
     tech: "reactjs",
     type: "game",
     role: "developer",
-    pic: "/images/portfolio/1.jpg",
+    pic: "/images/portfolio/pesarak.png",
     link: "https://magic-light-team.github.io/Pesarak/",
   },
   {
@@ -138,7 +138,7 @@ const myPortofolio = [
     tech: "reactjs",
     type: "game",
     role: "developer",
-    pic: "/images/portfolio/1.jpg",
+    pic: "/images/portfolio/ot.png",
     link: "https://magic-light-team.github.io/ot/",
   },
 ]
@@ -187,11 +187,6 @@ export default () => {
             </GridListTile>
           ))}
         </GridList>
-        <ul>
-          {myPortofolio.map(p => (
-            <li>{p.title}</li>
-          ))}
-        </ul>
       </Paper>
     </Layout>
   )
