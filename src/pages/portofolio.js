@@ -11,6 +11,8 @@ import GridList from "@material-ui/core/GridList"
 import GridListTile from "@material-ui/core/GridListTile"
 import GridListTileBar from "@material-ui/core/GridListTileBar"
 import IconButton from "@material-ui/core/IconButton"
+import DialogTitle from "@material-ui/core/DialogTitle"
+import Dialog from "@material-ui/core/Dialog"
 
 import Layout from "../components/layout"
 
@@ -19,8 +21,8 @@ const useStyles = makeStyles({
     flexGrow: 1,
     //maxWidth: 500,
   },
-  gridListTileBar:{fontWeight: 'bold',textShadow: '1px 1px gray'},
-  gridListIcon:{color: 'rgba(255, 255, 255, 0.54)'},
+  gridListTileBar: { fontWeight: "bold", textShadow: "1px 1px gray" },
+  gridListIcon: { color: "rgba(255, 255, 255, 0.54)" },
 })
 
 const myPortofolio = [
@@ -155,38 +157,44 @@ export default () => {
   const [tabValue, setTabValue] = React.useState(0)
   const handleChangeTab = (event, newValue) => {
     setTabValue(newValue)
-    switch(newValue){
-case 0: 
-setPortofolio(myPortofolio)
-break
-case 1:
-setPortofolio(myPortofolio.filter(p=>p.type==="website"))
-break
-case 2:
-setPortofolio(myPortofolio.filter(p=>p.type==="webapp"))
-break
-case 3:
-setPortofolio(myPortofolio.filter(p=>p.type==="game"))
-break
-}
+    switch (newValue) {
+      case 0:
+        setPortofolio(myPortofolio)
+        break
+      case 1:
+        setPortofolio(myPortofolio.filter(p => p.type === "website"))
+        break
+      case 2:
+        setPortofolio(myPortofolio.filter(p => p.type === "webapp"))
+        break
+      case 3:
+        setPortofolio(myPortofolio.filter(p => p.type === "game"))
+        break
+    }
   }
 
   // randomize Portofolio
   let currentIndex = myPortofolio.length
-  let tempValue=0
-  let randomIndex=0
-  while(currentIndex > 0) {
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
+  let tempValue = 0
+  let randomIndex = 0
+  while (currentIndex > 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex)
+    currentIndex -= 1
     tempValue = myPortofolio[currentIndex]
     myPortofolio[currentIndex] = myPortofolio[randomIndex]
-    myPortofolio[randomIndex]=tempValue
+    myPortofolio[randomIndex] = tempValue
   }
-  const [portofolio, setPortofolio] = React.useState(myPortofolio);
+  const [portofolio, setPortofolio] = React.useState(myPortofolio)
 
-  //const [openModal, setOpenModal] = React.useState(false);
-  //const [selectedPortofolio, setSelectedPortofolio] = React.useState({});
-
+  const handlePortofolioClick = p => {
+    setOpenModal(true)
+setSelectedPortofolio(p)
+  }
+  const handleCloseDialog = value => {
+    setOpenModal(false);
+  };
+  const [openModal, setOpenModal] = React.useState(false)
+  const [selectedPortofolio, setSelectedPortofolio] = React.useState({});
 
   return (
     <Layout>
@@ -222,6 +230,7 @@ break
                   <IconButton
                     aria-label={`info about ${p.title}`}
                     className={classes.gridListIcon}
+                    onclick={()=>handlePortofolioClick(p)}
                   >
                     {p.type === "website" ? (
                       <WebIcon />
@@ -237,6 +246,10 @@ break
           ))}
         </GridList>
       </Paper>
+
+      <Dialog aria-labelledby="single-portofolio-dialog" open={openModal} onClose={handleCloseDialog}>
+        <DialogTitle id="simple-dialog-title">{selectedPortofolio.title}</DialogTitle>
+      </Dialog>
     </Layout>
   )
 }
