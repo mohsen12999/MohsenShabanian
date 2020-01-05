@@ -6,6 +6,6 @@ img: /img/sample.jpg
 slug: test-title
 ---
 
-متن تستی 
+متن تستی
 [لینک تستی](www.mohsenshabanian.com)
 `test`

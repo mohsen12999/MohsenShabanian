@@ -22,7 +22,10 @@ export default () => {
           Mohsen Shabanian
         </Typography>
         <Typography variant="h4" gutterBottom>
-          I'm a <ChangeText words={["Web Developer.","Teacher.","Learner.","Gamer."]}/>
+          I'm a{" "}
+          <ChangeText
+            words={["Web Developer.", "Teacher.", "Learner.", "Gamer."]}
+          />
         </Typography>
       </div>
     </Layout>

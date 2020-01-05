@@ -11,8 +11,14 @@ import GridList from "@material-ui/core/GridList"
 import GridListTile from "@material-ui/core/GridListTile"
 import GridListTileBar from "@material-ui/core/GridListTileBar"
 import IconButton from "@material-ui/core/IconButton"
-import DialogTitle from "@material-ui/core/DialogTitle"
 import Dialog from "@material-ui/core/Dialog"
+import DialogTitle from "@material-ui/core/DialogTitle"
+import DialogActions from "@material-ui/core/DialogActions"
+import DialogContent from "@material-ui/core/DialogContent"
+import DialogContentText from "@material-ui/core/DialogContentText"
+import Button from "@material-ui/core/Button"
+import { useTheme } from "@material-ui/core/styles"
+import useMediaQuery from "@material-ui/core/useMediaQuery"
 
 import Layout from "../components/layout"
 
@@ -148,9 +154,6 @@ const myPortofolio = [
   },
 ]
 
-// Todo: make filter function
-// Todo: show random every time
-
 export default () => {
   const classes = useStyles()
 
@@ -198,6 +201,8 @@ export default () => {
   }
   const [openModal, setOpenModal] = React.useState(false)
   const [selectedPortofolio, setSelectedPortofolio] = React.useState({})
+  const theme = useTheme()
+  const fullScreen = useMediaQuery(theme.breakpoints.down("sm"))
 
   return (
     <Layout>
@@ -220,7 +225,7 @@ export default () => {
           <Tab icon={<SportsEsportsIcon />} label="Game" aria-label="Game" />
         </Tabs>
       </Paper>
-      <Paper>
+      <Paper style={{ marginTop: "1em" }}>
         <GridList>
           {portofolio.map(p => (
             <GridListTile style={{ minHeight: 400 }} key={p.title}>
@@ -254,9 +259,34 @@ export default () => {
         aria-labelledby="single-portofolio-dialog"
         open={openModal}
         onClose={handleCloseDialog}
+        fullScreen={fullScreen}
       >
         <DialogTitle id="simple-dialog-title">
-          {selectedPortofolio.title}
+          <DialogTitle id="alert-dialog-title">
+            {selectedPortofolio.title}
+          </DialogTitle>
+          <DialogContent>
+            <DialogContentText id="alert-dialog-description">
+              <strong>Project Type:</strong> {selectedPortofolio.type}
+            </DialogContentText>
+            <DialogContentText id="alert-dialog-description">
+              <strong>Technology:</strong> {selectedPortofolio.tech}
+            </DialogContentText>
+            <DialogContentText id="alert-dialog-description">
+              <strong>Description:</strong> {selectedPortofolio.desc}
+            </DialogContentText>
+            <DialogContentText id="alert-dialog-description">
+              <strong>role in progect:</strong> {selectedPortofolio.role}
+            </DialogContentText>
+            <DialogContentText id="alert-dialog-description">
+              <a href={selectedPortofolio.link}>See Project</a>
+            </DialogContentText>
+          </DialogContent>
+          <DialogActions>
+            <Button onClick={handleCloseDialog} color="primary">
+              close
+            </Button>
+          </DialogActions>
         </DialogTitle>
       </Dialog>
     </Layout>
