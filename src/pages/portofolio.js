@@ -10,6 +10,9 @@ import WebIcon from "@material-ui/icons/Web"
 import GridList from "@material-ui/core/GridList"
 import GridListTile from "@material-ui/core/GridListTile"
 import GridListTileBar from "@material-ui/core/GridListTileBar"
+import IconButton from "@material-ui/core/IconButton"
+import DialogTitle from "@material-ui/core/DialogTitle"
+import Dialog from "@material-ui/core/Dialog"
 
 import Layout from "../components/layout"
 
@@ -18,6 +21,8 @@ const useStyles = makeStyles({
     flexGrow: 1,
     //maxWidth: 500,
   },
+  gridListTileBar: { fontWeight: "bold", textShadow: "1px 1px gray" },
+  gridListIcon: { color: "rgba(255, 255, 255, 0.54)" },
 })
 
 const myPortofolio = [
@@ -148,17 +153,55 @@ const myPortofolio = [
 
 export default () => {
   const classes = useStyles()
-  const [value, setValue] = React.useState(0)
 
-  const handleChange = (event, newValue) => {
-    setValue(newValue)
+  const [tabValue, setTabValue] = React.useState(0)
+  const handleChangeTab = (event, newValue) => {
+    setTabValue(newValue)
+    switch (newValue) {
+      case 0:
+        setPortofolio(myPortofolio)
+        break
+      case 1:
+        setPortofolio(myPortofolio.filter(p => p.type === "website"))
+        break
+      case 2:
+        setPortofolio(myPortofolio.filter(p => p.type === "webapp"))
+        break
+      case 3:
+        setPortofolio(myPortofolio.filter(p => p.type === "game"))
+        break
+    }
   }
+
+  // randomize Portofolio
+  let currentIndex = myPortofolio.length
+  let tempValue = 0
+  let randomIndex = 0
+  while (currentIndex > 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex)
+    currentIndex -= 1
+    tempValue = myPortofolio[currentIndex]
+    myPortofolio[currentIndex] = myPortofolio[randomIndex]
+    myPortofolio[randomIndex] = tempValue
+  }
+  const [portofolio, setPortofolio] = React.useState(myPortofolio)
+
+  const handlePortofolioClick = p => {
+    setOpenModal(true)
+setSelectedPortofolio(p)
+  }
+  const handleCloseDialog = value => {
+    setOpenModal(false);
+  };
+  const [openModal, setOpenModal] = React.useState(false)
+  const [selectedPortofolio, setSelectedPortofolio] = React.useState({});
+
   return (
     <Layout>
       <Paper square className={classes.root}>
         <Tabs
-          value={value}
-          onChange={handleChange}
+          value={tabValue}
+          onChange={handleChangeTab}
           variant="fullWidth"
           indicatorColor="primary"
           textColor="primary"
@@ -176,18 +219,37 @@ export default () => {
       </Paper>
       <Paper>
         <GridList>
-          {myPortofolio.map(p => (
+          {portofolio.map(p => (
             <GridListTile style={{ minHeight: 400 }} key={p.title}>
               <img src={p.pic} alt={p.title} />
               <GridListTileBar
                 title={p.title}
                 subtitle={"technology: " + p.tech}
-                //actionIcon
+                className={classes.gridListTileBar}
+                actionIcon={
+                  <IconButton
+                    aria-label={`info about ${p.title}`}
+                    className={classes.gridListIcon}
+                    onclick={()=>handlePortofolioClick(p)}
+                  >
+                    {p.type === "website" ? (
+                      <WebIcon />
+                    ) : p.type === "webapp" ? (
+                      <DesktopWindowsIcon />
+                    ) : (
+                      <SportsEsportsIcon />
+                    )}
+                  </IconButton>
+                }
               />
             </GridListTile>
           ))}
         </GridList>
       </Paper>
+
+      <Dialog aria-labelledby="single-portofolio-dialog" open={openModal} onClose={handleCloseDialog}>
+        <DialogTitle id="simple-dialog-title">{selectedPortofolio.title}</DialogTitle>
+      </Dialog>
     </Layout>
   )
 }
