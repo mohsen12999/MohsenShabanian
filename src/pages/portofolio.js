@@ -170,6 +170,9 @@ export default () => {
       case 3:
         setPortofolio(myPortofolio.filter(p => p.type === "game"))
         break
+      default:
+        setPortofolio(myPortofolio)
+        break
     }
   }
 
@@ -188,13 +191,13 @@ export default () => {
 
   const handlePortofolioClick = p => {
     setOpenModal(true)
-setSelectedPortofolio(p)
+    setSelectedPortofolio(p)
   }
   const handleCloseDialog = value => {
-    setOpenModal(false);
-  };
+    setOpenModal(false)
+  }
   const [openModal, setOpenModal] = React.useState(false)
-  const [selectedPortofolio, setSelectedPortofolio] = React.useState({});
+  const [selectedPortofolio, setSelectedPortofolio] = React.useState({})
 
   return (
     <Layout>
@@ -230,7 +233,7 @@ setSelectedPortofolio(p)
                   <IconButton
                     aria-label={`info about ${p.title}`}
                     className={classes.gridListIcon}
-                    onclick={()=>handlePortofolioClick(p)}
+                    onClick={() => handlePortofolioClick(p)}
                   >
                     {p.type === "website" ? (
                       <WebIcon />
@@ -247,8 +250,14 @@ setSelectedPortofolio(p)
         </GridList>
       </Paper>
 
-      <Dialog aria-labelledby="single-portofolio-dialog" open={openModal} onClose={handleCloseDialog}>
-        <DialogTitle id="simple-dialog-title">{selectedPortofolio.title}</DialogTitle>
+      <Dialog
+        aria-labelledby="single-portofolio-dialog"
+        open={openModal}
+        onClose={handleCloseDialog}
+      >
+        <DialogTitle id="simple-dialog-title">
+          {selectedPortofolio.title}
+        </DialogTitle>
       </Dialog>
     </Layout>
   )
