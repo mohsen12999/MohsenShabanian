@@ -1,7 +1,7 @@
 ---
 title: عنوان تستی
 date: "2019-12-17"
-img: "/img/sample.jpg"
+img: "/images/blog/blog-2.jpg"
 path: "/blog/test-title"
 type: article
 lang: fa

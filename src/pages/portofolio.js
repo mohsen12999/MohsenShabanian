@@ -96,7 +96,7 @@ const myPortofolio = [
     title: "magic light",
     desc:
       "magic light is our game team homepage. introduce our games and connenct with our fans.",
-    tech: "html5",
+    tech: "static website with html5",
     type: "website",
     role: "develop",
     pic: "/images/portfolio/magiclight.png",
@@ -105,7 +105,7 @@ const myPortofolio = [
   {
     title: "mohsen shabanian",
     desc: "my home page website.",
-    tech: "gatsbyjs",
+    tech: "static website with gatsbyjs",
     type: "website",
     role: "design and develop",
     pic: "/images/portfolio/mohsenshabanian.png",
@@ -116,7 +116,7 @@ const myPortofolio = [
     title: "Noonap",
     desc:
       "noonap is a pwa (proggresive web application) for order or buy some foods or drink. you can choose product category and market for buying diffrence products. also you can pay online and choose deliver time.",
-    tech: "reactjs",
+    tech: "reactjs app using api",
     type: "webapp",
     role: "design and develop",
     pic: "/images/portfolio/noon.png",
