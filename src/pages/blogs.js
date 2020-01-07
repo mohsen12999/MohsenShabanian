@@ -1,10 +1,25 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Paper from "@material-ui/core/Paper"
+import Typography from "@material-ui/core/Typography"
+
+import Layout from "../components/layout"
 
 export default ({ data }) => {
   console.log(data)
   return (
-    <div>
+    <Layout>
+      <Typography
+        className="main_title"
+        variant="h4"
+        component="h4"
+        gutterBottom
+      >
+        <span>Blogs</span>
+      </Typography>
+
+      <Paper></Paper>
+
       <div>Hello world!</div>
       <h4>Total Post: {data.allMarkdownRemark.totalCount} Posts</h4>
       {data.allMarkdownRemark.edges.map(({ node }) => (
@@ -16,7 +31,7 @@ export default ({ data }) => {
           <hr />
         </div>
       ))}
-    </div>
+    </Layout>
   )
 }
 export const query = graphql`

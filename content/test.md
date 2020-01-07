@@ -1,9 +1,10 @@
 ---
 title: عنوان تستی
 date: "2019-12-17"
+img: "/img/sample.jpg"
 path: "/blog/test-title"
-img: /img/sample.jpg
-slug: test-title
+type: article
+lang: fa
 ---
 
 متن تستی
