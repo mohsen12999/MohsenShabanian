@@ -64,6 +64,10 @@ export default ({ data }) => {
     </Layout>
   )
 }
+
+// Todo: make class for persian blog
+// Todo: Change article logo depend to category
+
 export const query = graphql`
   query {
     allMarkdownRemark {
