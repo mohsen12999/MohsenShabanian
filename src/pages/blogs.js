@@ -76,9 +76,9 @@ export const query = graphql`
         node {
           id
           frontmatter {
+            date(formatString: "DD MMMM, YYYY")
             title
             img
-            date(formatString: "DD MMMM, YYYY")
             path
           }
           excerpt
