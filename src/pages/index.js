@@ -1,23 +1,13 @@
 import React from "react"
-import Layout from "../components/layout"
-import { makeStyles } from "@material-ui/core/styles"
 import { Typography } from "@material-ui/core"
 import ChangeText from "../components/changetext"
+import Layout from "../components/layout"
 
-const useStyles = makeStyles({
-  banner: {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translateY(-50%) translateX(-25%)",
-  },
-})
+import "./index.css"
 
-export default () => {
-  const classes = useStyles()
-  return (
+export default () => (
     <Layout>
-      <div className={classes.banner}>
+      <div className="main-banner">
         <Typography variant="h2" component="h2" gutterBottom>
           Mohsen Shabanian
         </Typography>
@@ -30,4 +20,3 @@ export default () => {
       </div>
     </Layout>
   )
-}
