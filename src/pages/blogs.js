@@ -11,7 +11,7 @@ import Layout from "../components/layout"
 import "./blogs.css"
 
 export default ({ data }) => {
-  console.log(data)
+  // console.log(data)
   return (
     <Layout>
       <Typography
