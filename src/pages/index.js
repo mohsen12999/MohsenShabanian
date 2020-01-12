@@ -24,7 +24,7 @@ export default () => {
         <Typography variant="h4" gutterBottom>
           I'm a{" "}
           <ChangeText
-            words={["Web Developer.", "Teacher.", "Learner.", "Gamer."]}
+            words={["Web Developer.", "Teacher.", "Learner.", "Gamer.","Computer Guy!"]}
           />
         </Typography>
       </div>
