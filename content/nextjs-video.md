@@ -9,5 +9,4 @@ lang: fa
 
 ویدئوی تجربه ساخت [سایت لاگ رامسر])(https://ramsarlug.ir/) بوسیله کتابخانه نکست
 
-[لینک ویدئو](https://youtu.be/JcW1X-26i-o)
-
+[![ویدئوی تجربه ساخت سایت لاگ رامسر](http://img.youtube.com/vi/JcW1X-26i-o/0.jpg)](http://www.youtube.com/watch?v=JcW1X-26i-o "ویدئوی تجربه ساخت سایت لاگ رامسر")
