@@ -1,0 +1,6 @@
+.info-grid {
+  text-align: center;
+}
+.info-grid > * {
+    display:block;
+}
