@@ -4,3 +4,12 @@
 .info-grid > * {
     display:block;
 }
+
+.paper-card {
+  background-color: #ffffffb0 !important;
+  transition: background-color 1s ease-out;
+}
+.paper-card:hover {
+  background-color: #fffffff0 !important;
+  transition: background-color 1s ease-out;
+}

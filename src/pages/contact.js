@@ -1,6 +1,7 @@
 import React from "react"
 import Typography from "@material-ui/core/Typography"
 import Grid from "@material-ui/core/Grid"
+import Paper from "@material-ui/core/Paper"
 import EmailIcon from "@material-ui/icons/Email"
 import MapIcon from "@material-ui/icons/Map"
 import CallIcon from "@material-ui/icons/Call"
@@ -15,24 +16,26 @@ export default () => (
     </Typography>
 
     <Grid container spacing={2}>
-      <form
-        action="https://formspree.io/engmohsenshabannian@gmail.com"
-        method="POST"
-      >
-        <label>
-          Your Name:
-          <input type="text" name="name" />
-        </label>
-        <label>
-          Your Email:
-          <input type="email" name="_replyto" />
-        </label>
-        <label>
-          Message:
-          <textarea name="message"></textarea>
-        </label>
-        <input type="submit" value="Send" />
-      </form>
+      <Paper className="paper-card">
+        <form
+          action="https://formspree.io/engmohsenshabannian@gmail.com"
+          method="POST"
+        >
+          <label>
+            Your Name:
+            <input type="text" name="name" />
+          </label>
+          <label>
+            Your Email:
+            <input type="email" name="_replyto" />
+          </label>
+          <label>
+            Message:
+            <textarea name="message"></textarea>
+          </label>
+          <input type="submit" value="Send" />
+        </form>
+      </Paper>
     </Grid>
 
     <Grid container spacing={2}>
