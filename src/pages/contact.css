@@ -1,15 +1,45 @@
 .info-grid {
   text-align: center;
 }
+
 .info-grid > * {
-    display:block;
+  margin: 10px;
+  display: block;
 }
 
 .paper-card {
+  margin-top: 2em !important;
   background-color: #ffffffb0 !important;
   transition: background-color 1s ease-out;
 }
+
 .paper-card:hover {
   background-color: #fffffff0 !important;
   transition: background-color 1s ease-out;
+}
+
+.paper-card .input-grid {
+  padding-left: 2em !important;
+}
+
+.paper-card .input-grid .input-text {
+  width: 80%;
+}
+
+.paper-card .info-grid {
+  padding: 2em !important;
+}
+
+.info-grid .info-grid-desc {
+  font-weight: bold !important;
+}
+
+.grid-map {
+  padding: 1em !important;
+}
+
+.grid-map .paper-map {
+  width: 100%;
+  height: 350px;
+  border: 1px solid gray;
 }

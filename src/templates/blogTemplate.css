@@ -1,0 +1,15 @@
+.paper-card {
+  margin-top: 2em !important;
+  padding: 2em !important;
+  background-color: #ffffffb0 !important;
+  transition: background-color 1s ease-out;
+}
+
+.paper-card:hover {
+  background-color: #fffffff0 !important;
+  transition: background-color 1s ease-out;
+}
+
+.blog-post-container .image-div {
+  text-align: center;
+}

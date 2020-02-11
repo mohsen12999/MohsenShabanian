@@ -49,7 +49,7 @@ export default ({ data }) => {
                         <RecentActorsIcon /> <span>Mohsen Sabanain</span>
                       </li>
                       <li className="article-ctegory">
-                        <CategoryIcon /> <span>article</span>
+                        <CategoryIcon /> <span>{node.frontmatter.type}</span>
                       </li>
                     </ul>
                   </div>
@@ -80,6 +80,7 @@ export const query = graphql`
             title
             img
             path
+            type
           }
           excerpt
         }
