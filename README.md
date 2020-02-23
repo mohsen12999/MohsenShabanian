@@ -10,18 +10,22 @@
 
 - [x] blog list
 - [x] single blog
-- [ ] pages
-  - [ ] home
-  - [ ] about
-  - [ ] resume -> with file
-  - [ ] portofolio
-  - [ ] blogs
-  - [ ] contact
-    - [ ] [Contact Form](https://www.gatsbyjs.org/docs/building-a-contact-form/)
+- [x] pages
+  - [x] home
+    - [ ] add more
+  - [x] about
+  - [x] resume -> with file
+    - [ ] new file
+  - [x] portofolio
+  - [x] blogs
+    - [ ] make class for persian blog
+    - [ ] Change article logo depend to category
+  - [x] contact
+    - [x] [Contact Form](https://www.gatsbyjs.org/docs/building-a-contact-form/)
 - [ ] component
   - [ ] seo
   - [ ] layout
-    - [ ] add bg slider
+    - [ ] add Home bg slider
     - [x] add change text
     - [x] make link
     - [x] add tooltips for icon
@@ -29,6 +33,7 @@
 - [x] add font awesome -> [react-fontawesome](https://github.com/FortAwesome/react-fontawesome)
 - [ ] [SEO with Gatsby](https://www.gatsbyjs.org/docs/seo/)
 - [ ] [Localization and Internationalization with Gatsby](https://www.gatsbyjs.org/docs/localization-i18n/)
+- [ ] [animation the portofolio](https://medium.com/@dmitrynozhenko/5-ways-to-animate-a-reactjs-app-in-2019-56eb9af6e3bf)
 
 ## mateial ui
 
