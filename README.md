@@ -12,7 +12,7 @@
 - [x] single blog
 - [x] pages
   - [x] home
-    - [ ] add more
+    - [ ] add more changeable things
   - [x] about
   - [x] resume -> with file
     - [ ] new file
@@ -30,6 +30,7 @@
     - [x] make link
     - [x] add tooltips for icon
     - [ ] show active icon
+    - [ ] add manifest
 - [x] add font awesome -> [react-fontawesome](https://github.com/FortAwesome/react-fontawesome)
 - [ ] [SEO with Gatsby](https://www.gatsbyjs.org/docs/seo/)
 - [ ] [Localization and Internationalization with Gatsby](https://www.gatsbyjs.org/docs/localization-i18n/)
