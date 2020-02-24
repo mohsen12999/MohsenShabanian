@@ -1,0 +1,103 @@
+.main_title {
+  margin-top: 1em !important;
+  text-align: center;
+}
+
+.main_title span {
+  border-bottom: 2px solid black;
+}
+
+.paper-card {
+  background-color: #ffffffb0 !important;
+  transition: background-color 1s ease-out;
+}
+.paper-card:hover {
+  background-color: #fffffff0 !important;
+  transition: background-color 1s ease-out;
+}
+
+.my-flex-card,
+.ability-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 1em;
+}
+
+.my-flex-card .img {
+  width: 200px;
+  height: 200px;
+}
+
+.my-flex-card .img img {
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+.my-flex-card .desc {
+  flex: 1;
+  min-width: 250px;
+  padding: 1em;
+  text-align: justify;
+}
+
+.from-city {
+  color: darkslategrey;
+  font-weight: 600;
+}
+
+.ability-item {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1em;
+}
+
+.ability-item span {
+  margin-left: 3px;
+  flex: 1 1 auto;
+}
+
+.ability-item span h3,
+.ability-item span p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.service-item {
+  padding: 1em;
+  background-color: #ffffffbb !important;
+  transition: background-color 500ms ease-out;
+}
+
+.service-item:hover {
+  background-color: #fffffff0 !important;
+  transition: background-color 500ms ease-out;
+}
+
+.service-item .service-title {
+  text-align: center;
+}
+
+.service-item .service-icon-span {
+  text-align: center;
+}
+
+.service-item .service-icon {
+  font-size: 30px;
+}
+.service-item .service-desc {
+  text-align: justify;
+}
+.my-interest-card {
+  background-color: #ffffff60 !important;
+  padding: 10px !important;
+}
+.my-interest-item {
+  padding: 3px 7px !important;
+}

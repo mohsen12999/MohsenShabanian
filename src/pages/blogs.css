@@ -1,0 +1,53 @@
+.article-paper {
+  overflow: hidden;
+}
+.article-figure {
+  margin: 0;
+}
+.article-figure img {
+  width: 100%;
+}
+.article-title {
+  transition: 0.3s;
+  padding-bottom: 6px;
+  color: #676767;
+  text-decoration: none;
+}
+.article-content {
+  padding: 0.5rem 1rem;
+}
+.article-date {
+  padding-bottom: 5px;
+  color: #7b7b7b;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+}
+.article-meta {
+  border-top: 1px solid #eaeaea;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  /*justify-content: space-between;*/
+}
+.article-meta li {
+  padding-top: 0.5em;
+  font-size: 1.1em;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+}
+.article-meta li span {
+  margin-left: 0.3em;
+}
+.article-author {
+  min-width: 60%;
+}
+.article-ctegory {
+  width: 40%;
+}
