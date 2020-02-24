@@ -45,7 +45,7 @@ const myPortofolio = [
   {
     title: "Qazvin Coffee",
     desc:
-      "Qazvin Coffee is e-commrce website for selling food and drink fucus on coffee and choclate. this website have a admin pannel for add, remove or change products and products categories. also have shop cart, receid and factor page and contact with client by sms.",
+      "Qazvin Coffee is an e-commerce website for selling food and drink focus on coffee and chocolate. This website has an admin panel to add, remove or change products and product categories. also have a shopping cart, invoice, factor page and contact with the client by SMS.",
     tech: ".net core (C#) framework and sql server database",
     type: "website",
     role: "design and develop",
@@ -55,7 +55,7 @@ const myPortofolio = [
   {
     title: "Ayegh Sanat Khazar",
     desc:
-      "Ayegh Sanat Khazar is a Company website. they can add, remove and change in news and product. also have gallery of images and slider in main page.",
+      "This project is Ayegh-Sanat-Khazar Company's website. they can add, remove and change in news and product. also have a gallery of images and sliders on the main page.",
     tech: "Laravel (Php) framework and Mysql database",
     type: "website",
     role: "design, develop and support",
@@ -65,7 +65,7 @@ const myPortofolio = [
   {
     title: "Villaayab",
     desc:
-      "Villaayab is a website for renting villa and hotels. registeration or login with sms or, email and password. have shop cart and payment gatway for renting and payind money. have diffrence dashboard and page for diffrence roles such as admin, clients supports, accountants and host managers.",
+      "Villaayab is a website for renting villa and hotels. registration or login with SMS or, email and password. have a shopping cart and payment gateway for renting and paying money. have different dashboards and pages for different roles such as admin, client supports, accountants and host managers.",
     tech: ".net core (C#) framework and sql server database",
     type: "website",
     role: "design and develop",
@@ -75,7 +75,7 @@ const myPortofolio = [
   {
     title: "Omid Shiroudi",
     desc:
-      "That was a personal website for a local famous artist mr. shiroudi. this site had a gallery, news, music and video page that can manage from admin panel completely. unfortunately after a while the owner decide to change the website.",
+      "That was a personal website for a local famous artist Mr. Shiroudi. this site had a gallery, news, music and video page that can manage from the admin panel completely. unfortunately, after a while the owner decides to change the website.",
     tech: "Laravel (Php) framework and Mysql database",
     type: "website",
     role: "design and develop",
@@ -85,7 +85,7 @@ const myPortofolio = [
   {
     title: "Apdr",
     desc:
-      "That is our company website. The main page is a solid html5 single page. but use the server for contact with our test app our website via api.",
+      "That is our company website. The main page is a solid html5 single page. but use the server for contact with our test app on our website via API.",
     tech: "Laravel (Php) framework and Mysql database",
     type: "website",
     role: "develop",
@@ -95,7 +95,7 @@ const myPortofolio = [
   {
     title: "magic light",
     desc:
-      "magic light is our game team homepage. introduce our games and connenct with our fans.",
+      "Magic light is our game developer team homepage website. this webpage helps us to introduce our games and connect us to other people who love making or playing games.",
     tech: "static website with html5",
     type: "website",
     role: "develop",
