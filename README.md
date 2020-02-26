@@ -17,6 +17,10 @@
 - [x] pages
   - [x] home
     - [ ] add more changeable things
+    - [ ] change background pic
+    - [ ] menu title change
+    - [ ] add youtube channel
+    - [ ] add podcast channel
   - [x] about
   - [x] resume -> with file
     - [ ] new file
@@ -39,6 +43,7 @@
 - [ ] [SEO with Gatsby](https://www.gatsbyjs.org/docs/seo/)
 - [ ] [Localization and Internationalization with Gatsby](https://www.gatsbyjs.org/docs/localization-i18n/)
 - [ ] [animation the portofolio](https://medium.com/@dmitrynozhenko/5-ways-to-animate-a-reactjs-app-in-2019-56eb9af6e3bf)
+- [ ] [gatsby-plugin-podcast-feed](https://www.gatsbyjs.org/packages/gatsby-plugin-podcast-feed/)
 
 ## mateial ui
 
