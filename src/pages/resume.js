@@ -31,6 +31,39 @@ export default () => (
           <li>
             <Paper className="timeline-paper">
               <Typography variant="h5" component="h3">
+                Freelancer Web-developer
+              </Typography>
+              <Typography className="time" variant="small">
+                <EventNoteIcon fontSize="small" />
+                <span>2018 - now</span>
+              </Typography>
+              <Typography component="p">
+                Making websites and web applications alone or as a member of a
+                team. Try to learn new programming languages, tools, and
+                frameworks and found out the best way to use them.
+              </Typography>
+            </Paper>
+          </li>
+          <li>
+            <Paper className="timeline-paper">
+              <Typography variant="h5" component="h3">
+                Teacher
+              </Typography>
+              <Typography className="time" variant="small">
+                <EventNoteIcon fontSize="small" />
+                <span>2017 - now</span>
+              </Typography>
+              <Typography component="p">
+                Work as a part-time teacher in educational institutions and
+                academies. Teach design web-page with HTML and CSS, and
+                programming languages such as c#, c++, python, javascript, and
+                java.
+              </Typography>
+            </Paper>
+          </li>
+          <li>
+            <Paper className="timeline-paper">
+              <Typography variant="h5" component="h3">
                 Apdr
               </Typography>
               <Typography className="time" variant="small">
