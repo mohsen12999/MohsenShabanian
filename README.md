@@ -32,19 +32,18 @@
   - [x] contact
     - [x] [Contact Form](https://www.gatsbyjs.org/docs/building-a-contact-form/)
 - [ ] component
-  - [ ] seo
   - [ ] layout
     - [ ] add Home bg slider
     - [x] add change text
     - [x] make link
     - [x] add tooltips for icon
     - [ ] show active icon
-    - [ ] add manifest
+    - [ ] [add manifest](https://www.gatsbyjs.org/docs/add-a-manifest-file/)
+    - [x] [SEO with Gatsby](https://www.gatsbyjs.org/docs/seo/)
 - [x] add font awesome -> [react-fontawesome](https://github.com/FortAwesome/react-fontawesome)
-- [ ] [SEO with Gatsby](https://www.gatsbyjs.org/docs/seo/)
-- [ ] [Localization and Internationalization with Gatsby](https://www.gatsbyjs.org/docs/localization-i18n/)
 - [ ] [animation the portofolio](https://medium.com/@dmitrynozhenko/5-ways-to-animate-a-reactjs-app-in-2019-56eb9af6e3bf)
 - [ ] [gatsby-plugin-podcast-feed](https://www.gatsbyjs.org/packages/gatsby-plugin-podcast-feed/)
+- [ ] [Localization and Internationalization with Gatsby](https://www.gatsbyjs.org/docs/localization-i18n/)
 
 ## mateial ui
 
