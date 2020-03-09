@@ -24,11 +24,14 @@ import Avatar from "@material-ui/core/Avatar"
 import TwitterIcon from "@material-ui/icons/Twitter"
 import InstagramIcon from "@material-ui/icons/Instagram"
 // import FacebookIcon from "@material-ui/icons/Facebook"
+/*import YouTube from "@material-ui/icons/YouTube"*/
 import GitHubIcon from "@material-ui/icons/GitHub"
 import GetAppIcon from "@material-ui/icons/GetApp"
 import Tooltip from "@material-ui/core/Tooltip"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
+
+import Seo from "./seo"
 
 const drawerWidth = 240
 
@@ -159,7 +162,7 @@ const Layout = ({ container, children }) => {
 
       <List>
         <a className={classes.links} href="https://twitter.com/mohsen1299">
-          <Tooltip title="Twitter Home Page" aria-label="twitter" arrow>
+          <Tooltip title="Twitter Page" aria-label="twitter" arrow>
             <ListItem button>
               <ListItemIcon>
                 <TwitterIcon fontSize="large" />
@@ -172,7 +175,7 @@ const Layout = ({ container, children }) => {
           className={classes.links}
           href="https://www.linkedin.com/in/mohsen-shabanian-8869b478/"
         >
-          <Tooltip title="Linkdin Home Page" aria-label="linkdin" arrow>
+          <Tooltip title="Linkdin Page" aria-label="linkdin" arrow>
             <ListItem button>
               <ListItemIcon>
                 <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: 30 }} />
@@ -185,7 +188,7 @@ const Layout = ({ container, children }) => {
           className={classes.links}
           href="https://www.instagram.com/mohsen_1299/"
         >
-          <Tooltip title="Instagram Home Page" aria-label="instagram" arrow>
+          <Tooltip title="Instagram Page" aria-label="instagram" arrow>
             <ListItem button>
               <ListItemIcon>
                 <InstagramIcon fontSize="large" />
@@ -217,6 +220,19 @@ const Layout = ({ container, children }) => {
             </ListItem>
           </Tooltip>
         </a> */}
+        {/* <a
+          className={classes.links}
+          href="https://www.youtube.com/channel/UC5Lh_5dSPD15dqBXX10ogFw"
+        >
+          <Tooltip title="YouTube Home Page" aria-label="facebook" arrow>
+            <ListItem button>
+              <ListItemIcon>
+                <YouTube fontSize="large" />
+              </ListItemIcon>
+              <ListItemText primary={"@mohsenshabanian"} />
+            </ListItem>
+          </Tooltip>
+        </a> */}
       </List>
 
       <Divider />
@@ -238,6 +254,7 @@ const Layout = ({ container, children }) => {
 
   return (
     <div className={classes.root}>
+      <Seo />
       <CssBaseline />
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar>

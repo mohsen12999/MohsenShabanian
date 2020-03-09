@@ -1,7 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../components/layout"
 import { Paper } from "@material-ui/core"
+
+import Layout from "../components/layout"
+import Seo from "../components/seo"
 
 import "./blogTemplate.css"
 
@@ -12,6 +14,7 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
     <Layout>
+      <Seo title={frontmatter.title} pic={frontmatter.img} />
       <Paper className="paper-card">
         <div className="blog-post-container">
           <div className="image-div">

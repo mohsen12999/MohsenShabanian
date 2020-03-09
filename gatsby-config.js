@@ -6,7 +6,15 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: `Mohsen Shabanian`,
+    description: `Mohsen Shabanian Personal Website`,
+    author: `Mohsen Shabanian`,
+    twitter: `@mohsen1299`,
+    pic: `https://mohsenshabanian.com/images/me.png`,
+  },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
