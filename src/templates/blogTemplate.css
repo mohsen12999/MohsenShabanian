@@ -13,3 +13,9 @@
 .blog-post-container .image-div {
   text-align: center;
 }
+
+.blog-post pre {
+  padding: 1rem;
+  background-color: #d3d3d35c;
+  border-radius: 0.25rem;
+}

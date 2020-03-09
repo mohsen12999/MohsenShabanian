@@ -28,7 +28,7 @@
   - [x] blogs
     - [ ] make class for persian blog
     - [ ] Change article logo depend to category
-    - [ ] css class for code span
+    - [x] css class for code span
   - [x] contact
     - [x] [Contact Form](https://www.gatsbyjs.org/docs/building-a-contact-form/)
 - [ ] component
