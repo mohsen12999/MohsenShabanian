@@ -21,14 +21,13 @@ import { useTheme } from "@material-ui/core/styles"
 import useMediaQuery from "@material-ui/core/useMediaQuery"
 
 import Layout from "../components/layout"
+import "./portofolio.css"
 
 const useStyles = makeStyles({
   root: {
     flexGrow: 1,
     //maxWidth: 500,
   },
-  gridListTileBar: { fontWeight: "bold", textShadow: "1px 1px gray" },
-  gridListIcon: { color: "rgba(255, 255, 255, 0.54)" },
 })
 
 const myPortofolio = [
@@ -225,20 +224,20 @@ export default () => {
           <Tab icon={<SportsEsportsIcon />} label="Game" aria-label="Game" />
         </Tabs>
       </Paper>
-      <Paper style={{ marginTop: "1em" }}>
+      <Paper className="portofolio-item-well">
         <GridList>
           {portofolio.map(p => (
-            <GridListTile style={{ minHeight: 400 }} key={p.title}>
+            <GridListTile className="portofolio-item" key={p.title}>
               <img src={p.pic} alt={p.title} />
               <GridListTileBar
                 title={p.title}
                 subtitle={"technology: " + p.tech}
-                className={classes.gridListTileBar}
+                className="gridListTileBar"
+                onClick={() => handlePortofolioClick(p)}
                 actionIcon={
                   <IconButton
                     aria-label={`info about ${p.title}`}
-                    className={classes.gridListIcon}
-                    onClick={() => handlePortofolioClick(p)}
+                    className="gridListIcon"
                   >
                     {p.type === "website" ? (
                       <WebIcon />

@@ -1,0 +1,28 @@
+.portofolio-item-well {
+  margin-top: 2em !important;
+  background-color: #ffffffb0 !important;
+}
+
+.portofolio-item {
+  min-height: 400px;
+  opacity: 0.8;
+  transition: all 500ms;
+}
+
+.portofolio-item:hover {
+  opacity: 1;
+  transition: all 500ms;
+}
+
+.gridListTileBar {
+  font-weight: bold;
+  text-shadow: 1px 1px gray;
+}
+
+.gridListTileBar:hover {
+  cursor: pointer;
+}
+
+.gridListIcon {
+  color: rgba(255, 255, 255, 0.54);
+}
