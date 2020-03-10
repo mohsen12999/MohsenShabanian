@@ -4,7 +4,7 @@
 }
 
 .portofolio-item {
-  min-height: 400px;
+  min-height: 50vw;
   opacity: 0.8;
   transition: all 500ms;
 }
