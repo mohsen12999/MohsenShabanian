@@ -53,3 +53,11 @@
 - [material-ui tooltips](https://material-ui.com/components/tooltips/)
 - [material-ui material-icons](https://material-ui.com/components/material-icons/)
 - [material-ui speed-dial](https://material-ui.com/components/speed-dial/)
+
+## Article
+
+- [ ] add publish/save for article
+- [ ] deploy Laravel on Cpanel
+- [ ] save pic problem in Xampp
+- [ ] PWA with ReactJS and Laravel
+- [ ] make APK file from pwa
