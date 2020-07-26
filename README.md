@@ -45,7 +45,7 @@
 - [ ] [gatsby-plugin-podcast-feed](https://www.gatsbyjs.org/packages/gatsby-plugin-podcast-feed/)
 - [ ] [Localization and Internationalization with Gatsby](https://www.gatsbyjs.org/docs/localization-i18n/)
 
-## mateial ui
+## Mateial ui
 
 - [sample gatsby project with material ui](https://appendto.com/2019/04/build-fast-and-elegant-sites-with-gatsby-netlifycms-and-material-ui/)
 - [material-ui drawers](https://material-ui.com/components/drawers/)
@@ -61,3 +61,12 @@
 - [ ] save pic problem in Xampp
 - [ ] PWA with ReactJS and Laravel
 - [ ] make APK file from pwa
+
+## video
+
+- [ ] create react app
+- [ ] achar
+
+## podcast
+
+- [ ] 0- prolog
