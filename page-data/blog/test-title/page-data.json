@@ -1,1 +1,0 @@
-{"componentChunkName":"component---src-templates-blog-template-js","path":"/blog/test-title","result":{"data":{"markdownRemark":{"html":"<p>متن تستی\n<a href=\"www.mohsenshabanian.com\">لینک تستی</a>\n<code>test</code></p>","frontmatter":{"date":"December 17, 2019","path":"/blog/test-title","title":"عنوان تستی"}}},"pageContext":{"isCreatedByStatefulCreatePages":false}}}
