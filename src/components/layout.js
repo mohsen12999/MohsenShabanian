@@ -173,7 +173,7 @@ const Layout = ({ container, children }) => {
         </a>
         <a
           className={classes.links}
-          href="https://www.linkedin.com/in/mohsen-shabanian-8869b478/"
+          href="https://www.linkedin.com/in/mohsenshabanian/"
         >
           <Tooltip title="Linkdin Page" aria-label="linkdin" arrow>
             <ListItem button>
