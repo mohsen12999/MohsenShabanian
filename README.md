@@ -24,7 +24,7 @@
   - [x] about
   - [x] resume -> with file
     - [ ] new file
-  - [x] portofolio
+  - [x] portfolio
   - [x] blogs
     - [ ] make class for persian blog
     - [ ] Change article logo depend to category
