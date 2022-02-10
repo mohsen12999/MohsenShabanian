@@ -14,18 +14,46 @@ a {
   color: inherit;
   text-decoration: none;
 }
+ */
 
 * {
   box-sizing: border-box;
-} */
+}
 
 @font-face {
   font-family: Vazir;
-  src: url('fonts/Vazir-Regular.eot');
-  src: url('fonts/Vazir-Regular.eot?#iefix') format('embedded-opentype'),
-       url('fonts/Vazir-Regular.woff2') format('woff2'),
-       url('fonts/Vazir-Regular.woff') format('woff'),
-       url('fonts/Vazir-Regular.ttf') format('truetype');
+  src: url('/fonts/Vazir-Regular.eot');
+  src: url('/fonts/Vazir-Regular.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/Vazir-Regular.woff2') format('woff2'),
+       url('/fonts/Vazir-Regular.woff') format('woff'),
+       url('/fonts/Vazir-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+
+.persian-font{
+  font-family: Vazir;
+}
+
+/* https://codepen.io/jstn/pen/mdoOZJ */
+.animated-hover-underline ul li a{
+  position: relative;
+}
+
+.animated-hover-underline ul li a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.animated-hover-underline ul li a:hover:after { 
+  width: 100%; 
+  left: 0; 
 }
