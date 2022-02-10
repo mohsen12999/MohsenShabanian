@@ -23,7 +23,8 @@ const Home: NextPage = () => {
             <li className='text-center'>
               {/* <a href="http://youtube.com" target="_blank" rel="noopener noreferrer"><Image src="/img/svg//youtube-brands.svg" alt="youtube Logo" width={40} height={16} /></a> */}
               <a href="http://linkdin.com/in/mohsenshabanian" target="_blank" title='linkdin account' rel="noopener noreferrer"><Image src="/img/svg/linkedin-brands.svg" alt="linkedin Logo" width={40} height={16} /></a>
-              <a href="mailto:info@MohsenShabanian.com" target="_blank" title='email' rel="noopener noreferrer"><Image src="/img/svg/envelope-solid.svg" alt="envelope Logo" width={40} height={16} /></a>
+              <a href="mailto:info@MohsenShabanian.com" target="_blank" title='email' rel="noopener noreferrer"><Image src="/img/svg/envelope-solid.svg" alt="envelope" width={40} height={16} /></a>
+              <a href="tel:+989113923310" target="_blank" title='mobile' rel="noopener noreferrer"><Image src="/img/svg/phone-solid.svg" alt="phone" width={40} height={16} /></a>
               <a href="http://twitter.com/mohsen1299" target="_blank" title='twitter account' rel="noopener noreferrer"><Image src="/img/svg/twitter-brands.svg" alt="twitter Logo" width={40} height={16} /></a>
               <a href="/Resume_MohsenShabanian.pdf" title='resume file' download="resume file"><Image src="/img/svg/file-pdf-solid.svg" alt="resume file" width={40} height={16} /></a>
               </li>
