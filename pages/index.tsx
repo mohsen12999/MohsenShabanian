@@ -11,6 +11,16 @@ const Home: NextPage = () => {
         <title>Home / صفحهٰ اصلی</title>
         <meta name="description" content="Mohsen Shabanian Webpage" />
         <link rel="icon" href="/favicon.ico" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1YV1ZB91CQ"></script>
+        <script>
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-1YV1ZB91CQ');
+          `}
+        </script>
       </Head>
       <main>
         <nav className='animated-hover-underline'>
